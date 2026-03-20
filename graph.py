@@ -16,10 +16,6 @@ def route_after_orchestrator(state: ResearchState) -> str:
     return "research"
 
 
-def route_after_summarizer(state: ResearchState) -> str:
-    return "write"
-
-
 def build_graph(search_func=None):
     graph = StateGraph(ResearchState)
 
